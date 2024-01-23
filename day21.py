@@ -1,30 +1,11 @@
-# lives = 3
-# while True:
-#     user_input = int(input('1 x 7: '))
-#     if user_input == 7:
-#         print('Good!')
-        
-#     else:
-#         lives -= 1
-#         break
-#     user_input = int(input('2 x 7: '))
-#     if user_input == 14:
-#         print('Keep it up!')
-        
-#     else:
-#         lives -= 1
-#         break
-        
-#     print(f'You scored {lives} out of 2')
-    
 print('Welcome to Quiz Game!')
 print()
 
-fact_family = int(input('Name your multiples: '))
+num = int(input('Name your multiples: '))
 print()
 counter = 0
 for i in range(1,11):
-    correct_answer = i * fact_family
+    correct_answer = i * num
     print(i, 'x', fact_family)
     answer = int(input('> '))
     if answer == correct_answer:
